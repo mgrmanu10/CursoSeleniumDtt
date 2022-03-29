@@ -27,6 +27,7 @@ public class Entregable_1_1 {
 
         Thread.sleep(5000);  // Esperamos 5 segundos
 
-        driver.quit();  // Cerramos el navegador
+        driver.quit();  // Cerramos el navegador.
+
     }
 }
