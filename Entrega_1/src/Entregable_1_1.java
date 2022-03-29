@@ -14,22 +14,19 @@ import java.util.concurrent.TimeUnit;
 public class Entregable_1_1 {
     public static void main (String[] args) throws InterruptedException{
 
-        System.setProperty("webdriver.chrome.driver","C:/Users/mgarciaromero/Desktop/Manuel García Romero/SeleniumCurso/Entrega_1/DRIVERs/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:/Users/jguerreroquiros/Desktop/Curso_Selenium/Entrega_1/DRIVERs/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        String BaseUrl="https://intranet.es.deloitte.com/Pages/default.aspx";
-        driver.get(BaseUrl);
 
-        Thread.sleep(3000);
+        driver.get("https://intranet.es.deloitte.com/Pages/default.aspx");  // Accedemos al enlace de la intranet
 
-        driver.findElement(By.xpath("//span[text()='Quiénes somos']")).click();
-        driver.findElement(By.xpath("//span[text()='Oficinas']")).click();
+        Thread.sleep(3000);  // Esperamos 3 segundos
 
+        driver.findElement(By.xpath("//span[text()='Quiénes somos']")).click();  // Hacemos click en "Quiénes Somos"
+        driver.findElement(By.xpath("//span[text()='Oficinas']")).click();  // Hacemos click en "Oficinas"
 
-        Thread.sleep(5000);
+        Thread.sleep(5000);  // Esperamos 5 segundos
 
-
-
-        driver.quit();
+        driver.quit();  // Cerramos el navegador
     }
 }
