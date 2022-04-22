@@ -14,7 +14,7 @@ import java.lang.Thread;
 
 public class tests_2_1 {
     public static void main (String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/mgarciaromero/Desktop/Manuel García Romero/SeleniumCurso/Entrega_1/DRIVERs/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Users/jguerreroquiros/Desktop/Curso_Selenium/Entrega_1/DRIVERs/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         String BaseUrl="https://www.uca.es/";
@@ -37,7 +37,6 @@ public class tests_2_1 {
         ventana.clickIngenieriaInformatica();
         ventana.newPage();
         ventana.clickCookies2();
-        ventana.clickAcceso();
         ventana.clickAcceso();
         ventana.clickGradosbis();
 

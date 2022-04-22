@@ -30,11 +30,21 @@ public class Ventana {
     //@FindBy(how = How.XPATH,using = "/html//div[@id='uca_popup_background']/div[@class='uca_ck_alert uca_ck_flex']//button[@class='btn btn-primary uca_ck_bt_accept']")
     WebElement cookies2;
 
-    @FindBy(how = How.XPATH,using = "//ul[@id='menu-principal']//a[@title='Acceso']")
+
+    @FindBy(how = How.XPATH,using = "//a[@title='Acceso']")
     WebElement acceso;
 
-    @FindBy(how = How.XPATH,using = "//ul[@id='menu-principal']/li[3]//a[@title='Grados']")
+    @FindBy(how = How.XPATH,using = "//a[@href='https://esingenieria.uca.es/acceso/grados/']")
     WebElement gradosbis;
+
+
+    /*
+    By linkAcceso = By.xpath("//a[text()='Acceso ']");
+    By linkGrados = By.xpath("//a[@href='https://esingenieria.uca.es/acceso/grados/']");
+
+     */
+
+
 
     public Ventana(WebDriver driver) {
         this.driver = driver;
