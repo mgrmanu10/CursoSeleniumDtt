@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class Entregable_1_2 {
     public static void main (String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","C:/Users/jguerreroquiros/Desktop/Curso_Selenium/Entrega_1/DRIVERs/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:/Users/mgarciaromero/Desktop/Manuel García Romero/SeleniumCurso/Entrega_1/DRIVERs/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         String BaseUrl="https://www.selenium.dev/";
