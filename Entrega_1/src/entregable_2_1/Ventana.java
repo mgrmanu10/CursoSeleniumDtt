@@ -14,6 +14,7 @@ public class Ventana {
 
     private WebDriver driver;
 
+
     @FindBy(how = How.XPATH,using = "//button[contains(text(),'Aceptar')]")
     WebElement cookies1;
 
@@ -36,13 +37,6 @@ public class Ventana {
 
     @FindBy(how = How.XPATH,using = "//a[@href='https://esingenieria.uca.es/acceso/grados/']")
     WebElement gradosbis;
-
-
-    /*
-    By linkAcceso = By.xpath("//a[text()='Acceso ']");
-    By linkGrados = By.xpath("//a[@href='https://esingenieria.uca.es/acceso/grados/']");
-
-     */
 
 
 
@@ -79,7 +73,7 @@ public class Ventana {
     public void clickAcceso() {
         acceso.click();
     }
-    public void clickGradosbis() {
+    public void clickGrados2() {
         gradosbis.click();
     }
 

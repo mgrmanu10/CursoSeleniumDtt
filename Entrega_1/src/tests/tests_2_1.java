@@ -14,10 +14,13 @@ import java.lang.Thread;
 
 public class tests_2_1 {
     public static void main (String[] args) throws InterruptedException {
+
+        // Crear ChromeDriver
+
         System.setProperty("webdriver.chrome.driver", "C:/Users/jguerreroquiros/Desktop/Curso_Selenium/Entrega_1/DRIVERs/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        String BaseUrl="https://www.uca.es/";
+        String BaseUrl = "https://www.uca.es/";
         driver.get(BaseUrl);  // Accedemos a la URL de la UCA
         driver.manage().window().maximize(); //maximizado de pantalla
 
@@ -26,10 +29,10 @@ public class tests_2_1 {
 
         ventana.clickCookies1();
         ventana.clickEstudiantes();
-        Thread.sleep(1000);
+        Thread.sleep(1000); // Intentar no usarlo !!
         ventana.clickGrados();
 
-        //Scroll
+        //Scroll --> meter dentro de metodos
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,3750)", "");
         Thread.sleep(1000);
@@ -38,7 +41,7 @@ public class tests_2_1 {
         ventana.newPage();
         ventana.clickCookies2();
         ventana.clickAcceso();
-        ventana.clickGradosbis();
+        ventana.clickGrados2();
 
 
     }
