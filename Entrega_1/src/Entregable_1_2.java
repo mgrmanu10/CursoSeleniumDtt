@@ -21,9 +21,10 @@ public class Entregable_1_2 {
 
         driver.manage().window().maximize();  // Maximizamos la ventana
 
-        Thread.sleep(5000);  // Esperamos 5 segundos
+        Thread.sleep(3000);  // Esperamos 3 segundos
 
         driver.findElement(By.xpath("//a[@href='/downloads']")).click();  // Hacemos click en "Downloads"
+        Thread.sleep(3000);  // Esperamos 3 segundos
 
         // Recuperar el número de versión estable para Java y C#, guardándolo en una variable e imprimiéndola por consola.
 

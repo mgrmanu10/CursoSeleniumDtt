@@ -19,10 +19,12 @@ public class Entregable_1_1 {
 
 
         driver.get("https://intranet.es.deloitte.com/Pages/default.aspx");  // Accedemos al enlace de la intranet
+        driver.manage().window().maximize();  // Maximizamos la ventana
 
         Thread.sleep(3000);  // Esperamos 3 segundos
 
         driver.findElement(By.xpath("//span[text()='Quiénes somos']")).click();  // Hacemos click en "Quiénes Somos"
+        Thread.sleep(3000);  // Esperamos 3 segundos
         driver.findElement(By.xpath("//span[text()='Oficinas']")).click();  // Hacemos click en "Oficinas"
 
         Thread.sleep(5000);  // Esperamos 5 segundos
