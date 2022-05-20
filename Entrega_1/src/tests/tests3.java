@@ -26,9 +26,12 @@ public class tests3 {
 
         Intranet web = new Intranet(driver);
 
-        web.closePopUp();
-        web.clickSearchBar();
-        web.search("Registro horario");
+        web.cerrarDialogo();
+        web.buscarRegistroHorario();
+        web.clickRegistroHorario();
+        web.aceptarCookies();
+
+
 
     }
 
